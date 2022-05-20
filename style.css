@@ -26,6 +26,7 @@ body {
   background-image: url(images/bg-hero-desktop.svg);
   background-color: hsl(193, 100%, 96%);
   height: 100vh;
+  font-family: "poppins", sans-serif;
 }
 @media (max-width: 768px) {
   .hero {
@@ -117,6 +118,12 @@ body {
   .two {
     justify-content: center;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .two img {
+    width: 301px;
+    height: 283px;
   }
 }
 
