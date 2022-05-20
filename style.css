@@ -53,6 +53,11 @@ body {
   width: 595px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .one img {
+    width: 378px;
+  }
+}
 @media (max-width: 768px) {
   .one img {
     width: 375px;
@@ -82,10 +87,11 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 94%;
   border-radius: 20px;
   margin-bottom: 30px;
-  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
-    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -103,13 +109,26 @@ body {
 }
 .two .text {
   width: 455px;
-  padding: 30px;
   margin-left: 20px;
 }
-@media (max-width: 425px) {
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .two {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .two {
+    justify-content: space-between;
+    text-align: left;
+  }
   .two img {
-    width: 310px;
-    height: 310px;
+    width: 357px;
+    height: 356px;
   }
 }
 
