@@ -69,6 +69,11 @@ body {
     width: 288px;
   }
 }
+@media (min-width: 992px) {
+  .one img {
+    margin-top: 50px;
+  }
+}
 .one .text {
   padding: 20px;
   width: 500px;
